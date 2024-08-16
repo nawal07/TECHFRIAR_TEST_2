@@ -12,14 +12,15 @@
   display: flex;
 }
 
-.site_container-right {
-  background-color: green;
-}
+/* Site Dashboard  */
 
 .site_dashboard {
   width: 20vw;
   height: 100vh;
   background-color: #0f1738;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .site_dashboard-header_title {
@@ -79,8 +80,417 @@
   border-radius: 8px;
 }
 
+.site_dashboard-footer {
+  padding: 16px;
+  padding-right: 40px;
+}
+
+.site_dashboard-footer div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  padding-top: 0;
+  gap: 8px;
+}
+
+.site_dashboard-footer p {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: start;
+  color: #ffffff;
+}
+.site_dashboard-footer div img {
+  width: 36px;
+  height: 36px;
+}
+
+.site_dashboard-footer .site_dashboard-footer-notify_help {
+  padding: 6px;
+}
+
+.site_dashboard-footer .site_dashboard-footer-threedot {
+  width: 16px;
+  height: 16px;
+}
+
+.site_dashboard-footer div .site_dashboard-footer-mainMail {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 0;
+}
+
+.site_dashboard-footer .site_dashboard-footer-secondary {
+  padding: 0;
+}
+
+.site_dashboard-footer .site_dashboard-footer-mail {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 18px;
+  text-align: start;
+  color: #7c89bf;
+}
 .site_contents {
   width: 30vw;
   height: 100vh;
   background-color: white;
+}
+
+/* End of Site Dashboard  */
+
+/* Site Contents Section  */
+
+/* Site Content Title  */
+
+.site_contents-title div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 40px;
+  padding-bottom: 0;
+  font-family: Inter;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 28.6px;
+  text-align: left;
+}
+
+.site_contents-title span {
+  font-weight: 500;
+}
+
+.site_contents-title .site_contents-welcome-note {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23.8px;
+  text-align: left;
+  color: #6a6a6d;
+  padding: 0 40px;
+}
+
+/* End of Site Content Details  */
+
+/* Site Content Document Update Details */
+
+.site_contents-document-update,
+.site_contents-approval-details {
+  background-image: url('./public/images/site_contents-document-update.svg');
+  background-size: cover;
+  width: 24vw;
+  height: 24vh;
+  margin: auto;
+  margin-top: 40px;
+  border-radius: 16px;
+}
+
+.site_contents-document-update-head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0 24px;
+  border-bottom: 2px solid #ffffff33;
+}
+
+.site_contents-document-update-head .site_contents-document-image {
+  width: 88px;
+  height: 101px;
+  position: relative;
+  bottom: 32px;
+}
+
+.site_contents-document-update-head .site_contents-document-image-2 {
+  width: 32px;
+  height: 32px;
+}
+
+.site_contents-document-update-head p {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18.2px;
+  text-align: left;
+}
+
+.site_contents-document-update-head p span {
+  font-weight: 500;
+}
+.site_contents-document-update-head p .up-to-date {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.site_contents-document-update-tail {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  padding-top: 16px;
+}
+
+.site_contents-document-update-tail p {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.2px;
+  text-align: left;
+}
+
+.site_contents-document-update-tail span {
+  font-weight: 500;
+}
+
+/* End of Site Content Document Update Details */
+
+/* Site Content Approval Details */
+
+.site_contents-approval-details {
+  background-image: url('./public/images/site_contents-approval.svg');
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 13px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.site_contents-approval-details div div {
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+}
+
+/* End of Site Content Approval Details */
+
+/* Site Content Mailbox and Legal Compliance  */
+
+.site_contents-mailbox,
+.site_contents-legal-compliance {
+  width: 24vw;
+  height: 24vh;
+  margin: auto;
+  margin-top: 32px;
+}
+
+.site_contents-mailbox div,
+.site_contents-legal-compliance div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.site_contents-mailbox span,
+.site_contents-legal-compliance span {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+}
+
+.site_contents-mailbox div p,
+.site_contents-legal-compliance div p {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: left;
+}
+
+.site_contents-mailbox div span p,
+.site_contents-legal-compliance div span p {
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: left;
+}
+
+.site_contents-mailbox span a,
+.site_contents-legal-compliance span a {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.6px;
+  text-align: center;
+  color: #515bae;
+}
+
+.site_contents-mailbox-items,
+.site_contents-legal-compliance-items {
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 0;
+}
+.site_contents-mailbox-items img,
+.site_contents-legal-compliance-items img {
+  width: 28px;
+  height: 28px;
+}
+
+.site_contents-mailbox-items div p,
+.site_contents-legal-compliance-items div p {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #6a6a6d;
+}
+
+.site_contents-mailbox-items div .count,
+.site_contents-legal-compliance-items div .count {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  color: #1e1f21;
+}
+
+.site_contents-mailbox-items span,
+.site_contents-legal-compliance-items span {
+  width: 45px;
+  height: 0px;
+  top: 685px;
+  left: 429px;
+  gap: 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  rotate: 90deg;
+  border: 1px solid #c9cee9;
+}
+
+/* End of Site Content Mailbox and Legal Compliance */
+
+/* End of Site Contents Section  */
+
+.site_container-right {
+  background-color: #ffffff;
+}
+
+.site_tasks_table,
+.site_payment_table {
+  padding: 40px;
+}
+
+.site_tasks_table span,
+.site_payment_table span {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: left;
+  color: #1e1f21;
+}
+
+.site_tasks_table a {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.6px;
+  color: #515bae;
+}
+.site_tasks_table div {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-top: 20px;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18.2px;
+  text-align: left;
+  color: #6a6a6d;
+}
+
+.site_tasks_table div p {
+  padding-bottom: 6px;
+}
+.site_tasks_table .selected {
+  color: #1e1f21;
+  border-bottom: 2px solid #0f1738;
+}
+
+.site_tasks_table-seperator {
+  padding: 0 !important;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #dfe2f2;
+}
+
+.site_tasks_table table {
+  width: 44vw;
+  border-top: 1px solid #e5e9ff;
+  border-bottom: 1px solid #e5e9ff;
+  border-radius: 10px;
+  border-spacing: 0;
+  border-collapse: separate;
+  overflow: hidden;
+}
+
+.site_tasks_table table th {
+  color: #6a6a6d;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15.6px;
+  text-align: left;
+}
+
+.site_tasks_table table thead {
+  background-color: #f8f9fc;
+}
+
+.site_tasks_table table tbody td:nth-child(1) {
+  border-left: 1px solid #e5e9ff;
+}
+
+.site_tasks_table table tbody td:nth-last-child(1) {
+  border-right: 1px solid #e5e9ff;
+}
+.site_tasks_table table td,
+.site_tasks_table th {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.6px;
+  text-align: left;
+  color: #1e1f21;
+  padding: 16px;
+  border-bottom: 1px solid #e5e9ff;
+}
+
+.site_tasks_table table tr:last-child td {
+  border-bottom: none;
+}
+
+.site_tasks_table table tr td:nth-child(1) {
+  width: 30%;
+}
+
+.site_tasks_table table .status {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.6px;
+  text-align: left;
+  color: #6a6a6d;
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+}
+
+.request-sent {
+  background-color: #f0f0f0;
+}
+
+.pending-action {
+  background-color: #e5e5e5;
 }
