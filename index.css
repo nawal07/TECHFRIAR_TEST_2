@@ -15,7 +15,7 @@
 /* Site Dashboard  */
 
 .site_dashboard {
-  width: 20vw;
+  /* width: 20vw; */  
   height: 100vh;
   background-color: #0f1738;
   display: flex;
@@ -24,6 +24,7 @@
 }
 
 .site_dashboard-header_title {
+  width: 19vw;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -81,9 +82,15 @@
 }
 
 .site_dashboard-footer {
+  width: 19vw;
+  height: 44vh; 
   padding: 16px;
-  padding-right: 40px;
-}
+  position: fixed;
+  bottom: 0px;
+  background-color: #0f1738;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;}
 
 .site_dashboard-footer div {
   display: flex;
@@ -371,12 +378,18 @@
 /* End of Site Contents Section  */
 
 .site_container-right {
+  display: flex;
+  flex-direction: column;
   background-color: #ffffff;
 }
 
 .site_tasks_table,
 .site_payment_table {
   padding: 40px;
+}
+
+.site_payment_table {
+  padding-top: 0;
 }
 
 .site_tasks_table span,
@@ -390,9 +403,11 @@
   line-height: 22px;
   text-align: left;
   color: #1e1f21;
+  padding-bottom: 20px;
 }
 
-.site_tasks_table a {
+.site_tasks_table a,
+.site_payment_table a {
   font-size: 14px;
   font-weight: 500;
   line-height: 19.6px;
@@ -402,7 +417,6 @@
   display: flex;
   align-items: center;
   gap: 24px;
-  padding-top: 20px;
   font-family: Inter;
   font-size: 14px;
   font-weight: 500;
@@ -426,7 +440,8 @@
   border: 1px solid #dfe2f2;
 }
 
-.site_tasks_table table {
+.site_tasks_table table,
+.site_payment_table table {
   width: 44vw;
   border-top: 1px solid #e5e9ff;
   border-bottom: 1px solid #e5e9ff;
@@ -436,7 +451,12 @@
   overflow: hidden;
 }
 
-.site_tasks_table table th {
+.site_payment_table table {
+  border: 1px solid #e5e9ff;
+}
+
+.site_tasks_table table th,
+.site_payment_table table th {
   color: #6a6a6d;
   font-family: Inter;
   font-size: 12px;
@@ -445,8 +465,17 @@
   text-align: left;
 }
 
-.site_tasks_table table thead {
+.site_tasks_table table thead,
+.site_payment_table table thead {
   background-color: #f8f9fc;
+}
+
+.site_payment_table table tbody td:nth-child(1) {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19.6px;
+  text-align: left;
 }
 
 .site_tasks_table table tbody td:nth-child(1) {
@@ -457,13 +486,19 @@
   border-right: 1px solid #e5e9ff;
 }
 .site_tasks_table table td,
-.site_tasks_table th {
+.site_payment_table table td {
   font-family: Inter;
   font-size: 14px;
   font-weight: 400;
   line-height: 19.6px;
   text-align: left;
   color: #1e1f21;
+  padding: 16px;
+  border-bottom: 1px solid #e5e9ff;
+}
+
+.site_tasks_table table th,
+.site_payment_table table th {
   padding: 16px;
   border-bottom: 1px solid #e5e9ff;
 }
