@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./index.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,12 +16,26 @@
   <body>
     <div class="site_container">
       <div class="site_container-left">
-        <div class="site_dashboard">
+        <div class="site_dashboard-responsive">
+          <div>
+            <img src="./public/images/site_dashboard_title-icon.svg" alt="" />
+            <p>E-Dashboard</p>
+          </div>
+          <img
+            id="hideButton"
+            class="hideButton"
+            src="./public/images/site_dashboard_title-hamburger-menu-responsive.svg"
+            alt=""
+          />
+        </div>
+        <div class="site_dashboard" id="dashboard">
           <div class="site_dashboard-header">
             <div class="site_dashboard-header_title">
               <img src="./public/images/site_dashboard_title-icon.svg" alt="" />
               <p>E-Dashboard</p>
               <img
+                id="hideButton"
+                class="hideButton"
                 src="./public/images/site_dashboard_title-hamburger-menu.svg"
                 alt=""
               />
@@ -140,9 +155,16 @@
             </div>
           </div>
         </div>
-        <div class="site_contents">
+        <div class="site_contents" id="contents">
+          <img
+            id="hideButton-toggle"
+            class="hideButton-toggle"
+            src="./public/images/site_dashboard_title-hamburger-menu.svg"
+            alt=""
+          />
+          <span id="tooltip" class="tooltip">Show Dashboard</span>
           <div>
-            <div class="site_contents-title">
+            <div class="site_contents-title" id="site_contents">
               <div>
                 <p>Good morning,</p>
                 <span>Emily!</span>
@@ -225,7 +247,8 @@
                     src="./public/images/site_contents-main-approved_image.svg"
                     alt=""
                   />
-                  <p>New</p>
+                  <p class="site_contents-non_responsive">New</p>
+                  <p class="site_contents-responsive">Updates</p>
                   <p class="count">23</p>
                 </div>
                 <span></span>
@@ -234,7 +257,8 @@
                     src="./public/images/site_contents-main-progress_image.svg"
                     alt=""
                   />
-                  <p>Requested</p>
+                  <p class="site_contents-non_responsive">Requested</p>
+                  <p class="site_contents-responsive">Pending</p>
                   <p class="count">23</p>
                 </div>
                 <span></span>
@@ -243,7 +267,8 @@
                     src="./public/images/site_contents-main-to_approve_image.svg"
                     alt=""
                   />
-                  <p>Action Taken</p>
+                  <p class="site_contents-non_responsive">Action Taken</p>
+                  <p class="site_contents-responsive">Reminders</p>
                   <p class="count">23</p>
                 </div>
               </div>
@@ -262,7 +287,8 @@
                     src="./public/images/site_contents-main-approved_image.svg"
                     alt=""
                   />
-                  <p>Reminders</p>
+                  <p class="site_contents-non_responsive">Reminders</p>
+                  <p class="site_contents-responsive">Updates</p>
                   <p class="count">23</p>
                 </div>
                 <span></span>
@@ -271,7 +297,8 @@
                     src="./public/images/site_contents-main-progress_image.svg"
                     alt=""
                   />
-                  <p>In Progress</p>
+                  <p class="site_contents-non_responsive">In Progress</p>
+                  <p class="site_contents-responsive">Pending</p>
                   <p class="count">23</p>
                 </div>
                 <span></span>
@@ -280,7 +307,8 @@
                     src="./public/images/site_contents-main-to_approve_image.svg"
                     alt=""
                   />
-                  <p>To approve</p>
+                  <p class="site_contents-non_responsive">To approve</p>
+                  <p class="site_contents-responsive">Reminders</p>
                   <p class="count">23</p>
                 </div>
               </div>
@@ -288,6 +316,7 @@
           </div>
         </div>
       </div>
+
       <div class="site_container-right">
         <div class="site_tasks_table">
           <span>
@@ -397,5 +426,6 @@
         </div>
       </div>
     </div>
+    <script src="./main.js"></script>
   </body>
 </html>
