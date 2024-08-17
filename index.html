@@ -22,8 +22,8 @@
             <p>E-Dashboard</p>
           </div>
           <img
-            id="hideButton"
-            class="hideButton"
+            id="showMenu"
+            class="showMenu"
             src="./public/images/site_dashboard_title-hamburger-menu-responsive.svg"
             alt=""
           />
@@ -323,12 +323,11 @@
             <p>Tasks</p>
             <a href="">View all</a>
           </span>
-          <div>
+          <div class="site_tasks-table_title">
             <p class="selected">My tasks</p>
             <p>Overdue</p>
             <p>Assigned by me</p>
           </div>
-          <div class="site_tasks_table-seperator"></div>
           <table>
             <thead>
               <tr>
@@ -340,13 +339,13 @@
             </thead>
             <tbody>
               <tr>
-                <td>Upadate Tax Document for Alphalinx</td>
+                <td>Update Tax Document for Alphalinx</td>
                 <td>Compliance</td>
                 <td>23/11/23</td>
                 <td><span class="status request-sent">Request sent</span></td>
               </tr>
               <tr>
-                <td>Upadate KYC document</td>
+                <td>Update KYC document</td>
                 <td>Compliance</td>
                 <td>23/11/23</td>
                 <td><span class="status request-sent">Request sent</span></td>
@@ -369,6 +368,94 @@
               </tr>
             </tbody>
           </table>
+
+          <div class="site_tasks-table_responsive">
+            <div class="site_tasks-table_responsive-rows">
+              <p class="site_tasks-table_responsive-head">
+                Update Tax Document for Alphalinx...
+              </p>
+              <div class="site_tasks-table_responsive-body">
+                <div>
+                  <p class="responsive_body-title">Category</p>
+                  <p>Compliance</p>
+                </div>
+                <div>
+                  <p class="responsive_body-title">Due date</p>
+                  <p>23/11/23</p>
+                </div>
+              </div>
+              <div class="site_tasks-table_responsive-tail">
+                <p>Status</p>
+                <span>Request sent</span>
+              </div>
+            </div>
+
+            <!-- Row 2 -->
+
+            <div class="site_tasks-table_responsive-rows">
+              <p class="site_tasks-table_responsive-head">
+                Update KYC document
+              </p>
+              <div class="site_tasks-table_responsive-body">
+                <div>
+                  <p class="responsive_body-title">Category</p>
+                  <p>Compliance</p>
+                </div>
+                <div>
+                  <p class="responsive_body-title">Due date</p>
+                  <p>23/11/23</p>
+                </div>
+              </div>
+              <div class="site_tasks-table_responsive-tail">
+                <p>Status</p>
+                <span>Request sent</span>
+              </div>
+            </div>
+
+            <!-- Row 3 -->
+
+            <div class="site_tasks-table_responsive-rows">
+              <p class="site_tasks-table_responsive-head">
+                Add clearer photo for visa application
+              </p>
+              <div class="site_tasks-table_responsive-body">
+                <div>
+                  <p class="responsive_body-title">Category</p>
+                  <p>Visa center</p>
+                </div>
+                <div>
+                  <p class="responsive_body-title">Due date</p>
+                  <p>23/11/23</p>
+                </div>
+              </div>
+              <div class="site_tasks-table_responsive-tail">
+                <p>Status</p>
+                <span>Pending action</span>
+              </div>
+            </div>
+
+            <!-- Row 4 -->
+
+            <div class="site_tasks-table_responsive-rows">
+              <p class="site_tasks-table_responsive-head">
+                Document not clear: please add new file
+              </p>
+              <div class="site_tasks-table_responsive-body">
+                <div>
+                  <p class="responsive_body-title">Category</p>
+                  <p>Visa center</p>
+                </div>
+                <div>
+                  <p class="responsive_body-title">Due date</p>
+                  <p>23/11/23</p>
+                </div>
+              </div>
+              <div class="site_tasks-table_responsive-tail">
+                <p>Status</p>
+                <span>Pending action</span>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="site_payment_table">
           <span>
@@ -423,6 +510,8 @@
               </tr>
             </tbody>
           </table>
+
+          <div class="site_payment-table_responsive"></div>
         </div>
       </div>
     </div>

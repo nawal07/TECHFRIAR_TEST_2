@@ -14,8 +14,10 @@
 
 /* Site Dashboard  */
 
-.site_dashboard-responsive {
-  display: none;
+.site_dashboard-responsive,
+.site_tasks-table_responsive,
+.site_payment-table_responsive {
+  display: none !important;
 }
 .site_dashboard {
   /* width: 20vw; */
@@ -493,11 +495,10 @@
   border-bottom: 2px solid #0f1738;
 }
 
-.site_tasks_table-seperator {
-  padding: 0 !important;
-  margin-bottom: 20px;
-  width: 100%;
-  border: 1px solid #dfe2f2;
+.site_tasks-table_title {
+  margin-bottom: 16px;
+  width: fit-content;
+  border-bottom: 2px solid #dfe2f2;
 }
 
 .site_tasks_table table,
@@ -652,7 +653,8 @@
 
 @media (max-width: 980px) {
   .site_dashboard,
-  .site_contents-non_responsive {
+  .site_contents-non_responsive,
+  table {
     display: none;
   }
 
@@ -775,5 +777,101 @@
   .site_container-right {
     width: 100%;
     height: fit-content;
+  }
+
+  .site_tasks_table,
+  .site_payment_table {
+    padding: 24px;
+  }
+
+  .site_tasks_table span,
+  .site_payment_table span {
+    gap: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
+    justify-content: space-between;
+    padding-bottom: 24px;
+  }
+
+  .site_tasks_table a,
+  .site_payment_table a {
+    line-height: 16px;
+  }
+
+  .site_tasks-table_responsive {
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .site_tasks-table_responsive-rows {
+    border-bottom: 1px solid #e5e9ff;
+    padding-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px !important;
+    align-items: baseline !important;
+    width: 88vw;
+  }
+
+  .site_tasks-table_responsive-head {
+    font-weight: 600;
+    line-height: 18.2px;
+    color: #1e1f21;
+    padding-top: 16px !important;
+  }
+
+  .site_tasks-table_responsive-body {
+    display: flex;
+    /* gap: 32px !important; */
+    gap: 102px !important;
+  }
+
+  .site_tasks-table_responsive-body div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: baseline;
+  }
+
+  .site_tasks-table_responsive-body .responsive_body-title {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16.9px;
+    letter-spacing: 0.005em;
+    color: #6a6a6d;
+  }
+
+  .site_tasks-table_responsive-body p {
+    line-height: 20px;
+    color: #1e1f21;
+    padding: 0 !important;
+  }
+
+  .site_tasks-table_responsive-tail {
+    display: flex;
+    flex-direction: column;
+    gap: 4px !important;
+    align-items: baseline !important;
+  }
+
+  .site_tasks-table_responsive-tail p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16.9px;
+    letter-spacing: 0.005em;
+    padding: 0 !important;
+  }
+  .site_tasks-table_responsive-tail span {
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15.6px;
+    text-align: left;
+    padding: 4px 12px;
+    border: 1px solid #ceced1;
+    background: #f1f1f5;
+    border-radius: 24px;
+    color: #6a6a6d;
   }
 }
