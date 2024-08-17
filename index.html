@@ -14,8 +14,12 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- Main Page  -->
     <div class="site_container">
+      <!-- Main page split to 3.   -->
+       <!-- Main page Part 1 -->
       <div class="site_container-left">
+        <!-- Dashboard of the site - for Responsive  -->
         <div class="site_dashboard-responsive" id="dashboardResponsive">
           <div>
             <img src="./public/images/site_dashboard_title-icon.svg" alt="" />
@@ -28,6 +32,7 @@
             alt=""
           />
         </div>
+        <!-- Menu section in dashboard - for Responsive -->
         <div class="menu_responsive" id="menuResponsive">
           <img
             id="hideMenuResponsive"
@@ -35,7 +40,6 @@
             src="./public/images/site_dashboard_title-hamburger-menu.svg"
             alt=""
           />
-
           <div class="menu_responsive_title">
             <img src="./public/images/site_dashboard_title-icon.svg" alt="" />
             <p>E-Dashboard</p>
@@ -101,7 +105,9 @@
             </div>
           </div>
         </div>
+        <!-- Dashboard with menu items - Desktop mode  -->
         <div class="site_dashboard" id="dashboard">
+          <!-- Dashboard header section  -->
           <div class="site_dashboard-header">
             <div class="site_dashboard-header_title">
               <img src="./public/images/site_dashboard_title-icon.svg" alt="" />
@@ -181,6 +187,7 @@
               </div>
             </div>
           </div>
+          <!-- Dashboard footer section  -->
           <div class="site_dashboard-footer">
             <div>
               <div class="site_dashboard-footer-secondary">
@@ -228,7 +235,10 @@
             </div>
           </div>
         </div>
+        <!-- Site Main contents section. -->
+        <!-- Main page part 2 -->
         <div class="site_contents" id="contents">
+          <!-- Show dashboard icon . Act as a toggle  -->
           <img
             id="hideButton-toggle"
             class="hideButton-toggle"
@@ -236,6 +246,7 @@
             alt=""
           />
           <span id="tooltip" class="tooltip">Show Dashboard</span>
+          <!-- Main page content , Title section  -->
           <div>
             <div class="site_contents-title" id="site_contents">
               <div>
@@ -249,6 +260,7 @@
               <p class="site_contents-welcome-note">Welcome back!</p>
             </div>
           </div>
+          <!-- Main page content , Document update card  -->
           <div class="site_contents-document-update">
             <div class="site_contents-document-update-head">
               <img
@@ -276,6 +288,7 @@
               />
             </div>
           </div>
+          <!-- Main page content , Approval details card  -->
           <div class="site_contents-approval-details">
             <img
               src="./public/images/site_contents-approval-chart.svg"
@@ -305,7 +318,9 @@
               </div>
             </div>
           </div>
+          <!-- Main Page Content, Mailboax section and Legal Compliance Section  -->
           <div class="site_contents-main_items">
+            <!-- Mailbox Updates Section  -->
             <div class="site_contents-mailbox">
               <div>
                 <span>
@@ -346,6 +361,7 @@
                 </div>
               </div>
             </div>
+            <!-- Legal Compliance Section  -->
             <div class="site_contents-legal-compliance">
               <div>
                 <span>
@@ -389,8 +405,10 @@
           </div>
         </div>
       </div>
-
+      <!-- Main page - Part 3. -->
+       <!-- Tasks details table and Payment history tables  -->
       <div class="site_container-right">
+        <!-- Tasls details Table  -->
         <div class="site_tasks_table">
           <span>
             <p>Tasks</p>
@@ -441,8 +459,11 @@
               </tr>
             </tbody>
           </table>
-
+          <!-- Tasks table section - for Responsive  -->
           <div class="site_tasks-table_responsive">
+
+            <!-- Row 1 -->
+
             <div class="site_tasks-table_responsive-rows">
               <p class="site_tasks-table_responsive-head">
                 Update Tax Document for Alphalinx...
@@ -531,6 +552,8 @@
             </div>
           </div>
         </div>
+
+        <!-- Payment history details table -->
         <div class="site_payment_table">
           <span>
             <p>Payment history</p>
@@ -585,6 +608,7 @@
             </tbody>
           </table>
 
+          <!-- Payment history details table - for Responsive  -->
           <div class="site_payment-table_responsive">
             <!-- Row 1 -->
 
@@ -735,7 +759,9 @@
                 />
               </div>
             </div>
+
             <!-- Row 6 -->
+
             <div class="site_payment-table_responsive-rows paymentRows">
               <div class="site_payment-table_responsive-content">
                 <p>#764657758</p>
@@ -767,6 +793,7 @@
         </div>
       </div>
     </div>
+    <!-- Embedding the javascript file to this html  -->
     <script src="./main.js"></script>
   </body>
 </html>
