@@ -14,11 +14,17 @@
 
 /* Site Dashboard  */
 
-.site_dashboard-responsive,
 .site_tasks-table_responsive,
+.menu_responsive,
 .site_payment-table_responsive {
   display: none !important;
 }
+
+.site_dashboard-responsive,
+.shrinkPayment {
+  display: none;
+}
+
 .site_dashboard {
   /* width: 20vw; */
   height: 100vh;
@@ -698,6 +704,65 @@
     height: 16px;
   }
 
+  .site_dashboard-responsive.hide {
+    display: none;
+  }
+  .site_dashboard-responsive.show {
+    display: flex;
+  }
+  .menu_responsive.show {
+    display: block !important;
+  }
+
+  .menu_responsive {
+    position: fixed;
+    right: 0;
+    width: 64vw;
+    height: 80vh;
+    background-color: #0f1738;
+    padding-top: 40px;
+    padding-left: 16px;
+    border-bottom-left-radius: 24px;
+  }
+
+  .menu_responsive .hideMenuResponsive {
+    position: fixed;
+    right: 16px;
+    top: 44px;
+    width: 20px;
+    height: 14px;
+  }
+
+
+  .menu_responsive_title{
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    padding-top: 0;
+    gap: 8px;
+  }
+
+  .menu_responsive_title p{
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+    color: #ffffff;
+  }
+
+  .site_dashboard-content p{
+    font-size: 12px;
+  }
+
+  .site_dashboard-header_company {
+    padding: 0 24px;
+}
+
+  .menu_responsive.hide {
+    display: none !important;
+  }
+
   .site_contents {
     width: 100%;
   }
@@ -799,7 +864,8 @@
     line-height: 16px;
   }
 
-  .site_tasks-table_responsive {
+  .site_tasks-table_responsive,
+  .site_payment-table_responsive {
     display: flex !important;
     flex-direction: column;
   }
@@ -873,5 +939,114 @@
     background: #f1f1f5;
     border-radius: 24px;
     color: #6a6a6d;
+  }
+
+  .site_payment_table {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .site_payment-table_responsive-rows {
+    border-bottom: 1px solid #e5e9ff;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    gap: 16px !important;
+    align-items: baseline !important;
+    justify-content: space-between;
+    width: 88vw;
+    font-family: Inter;
+  }
+
+  .site_payment-table_responsive-rows.show {
+    background-color: #f8f9fc;
+  }
+
+  .site_payment-table_responsive-rows.hide {
+    background-color: #ffffff;
+  }
+
+  .site_payment-table_responsive-rows
+    .site_payment-table_responsive-main_content {
+    display: flex;
+  }
+  .site_payment-table_responsive-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .site_payment-table_responsive-content p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #1e1f21;
+  }
+
+  .site_payment-table_responsive-content span {
+    display: none;
+  }
+
+  .site_payment-table_responsive-description {
+    padding-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .site_payment-table_responsive-description p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16.9px;
+    letter-spacing: 0.005em;
+    color: #6a6a6d;
+  }
+
+  .site_payment-table_responsive-description
+    .site_payment-table_responsive-description_type {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #1e1f21;
+  }
+  .site_payment-table_responsive-amount {
+    display: flex;
+    gap: 8px;
+  }
+
+  .site_payment-table_responsive-content .payment_table-date {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15.6px;
+    color: #6a6a6d;
+  }
+
+  .site_payment-table_responsive-amount p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22.4px;
+  }
+
+  .site_payment_table span {
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 980px) {
+  .site_contents-document-update,
+  .site_contents-approval-details {
+    height: 30vh;
+    border-radius: 40px;
+  }
+  .site_contents-document-update-head {
+    justify-content: space-evenly;
+  }
+
+  .site_contents-document-update-tail {
+    justify-content: center;
+  }
+
+  .site_tasks-table_responsive-rows {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
