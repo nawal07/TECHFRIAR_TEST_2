@@ -723,6 +723,7 @@
     padding-top: 40px;
     padding-left: 16px;
     border-bottom-left-radius: 24px;
+    z-index: 160;
   }
 
   .menu_responsive .hideMenuResponsive {
