@@ -1034,7 +1034,7 @@
   }
 }
 
-@media (min-width: 490px) and (max-width: 980px) {
+@media (min-width: 496px) and (max-width: 980px) {
   .site_contents-document-update,
   .site_contents-approval-details {
     height: 30vh;
